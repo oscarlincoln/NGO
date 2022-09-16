@@ -1,4 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css?family=Philosopher:700&display=swap');
+body{
+    font-family: 'Philosopher', sans-serif;
+}
 .main-wrapper{
     width:100%;
     margin:0 auto;
@@ -60,7 +63,7 @@ button{
     text-transform:uppercase;
     font-size:2em;
     background:#000;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Philosopher', sans-serif;
 }
 .sidebar-panel{
     background:transparent;
@@ -90,6 +93,10 @@ button{
     transition:ease 0.4s;
     margin-top: 40px;
 }
+.sidebar-panel ul li a{
+    color: white;
+    text-decoration: none;
+}
 
 .sidebar-panel ul li:hover {
     background: white;
@@ -99,10 +106,14 @@ button{
     transition:ease 0.4s;
     letter-spacing: 5px;
     cursor: pointer;
+    list-style-type: none;
+    text-decoration: none;
    
 }
 
-
+.sidebar-panel ul li a:hover{
+    color: #000;
+}
 .side-content{
     width:100%;
     max-width:991px;

@@ -8,9 +8,10 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet"> -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 <body>
     <div class="main wrapper">
@@ -34,11 +35,11 @@
     		    <div class="col-sm-12">
     		        <div class="sidelistwrp">
     		            <ul>
-    		                <li>Home</li>
-    		                <li>Services</li>
-    		                <li>About Us</li>
-    		                <li>Contact Us</li>
-    		                <li>FAQs</li>
+    		                <li  style="font-family:'Philosopher', sans-serif ;text-align:center;"><a href="../index.php" >Home</a></li>
+    		                <li  style="font-family:'Philosopher', sans-serif ;text-align:center;"><a href="./others/service.php">Services</a></li>
+    		                <li  style="font-family:'Philosopher', sans-serif ;text-align:center;"><a href="../others/about.php" >About Us</a></li>
+    		                <li  style="font-family:'Philosopher', sans-serif ;text-align:center;"><a href="../others/contact.php"> Contact Us</a></li>
+    		                <li  style="font-family:'Philosopher', sans-serif ;text-align:center;"><a href="../others/faq.php" >FAQs</a></li>
     		            </ul>
     		        </div>
     		    </div>
