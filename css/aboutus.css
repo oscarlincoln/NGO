@@ -16,7 +16,7 @@ body {
     color: #000;
 }
 .aboutus-title::after {
-    background: #fdb801 none repeat scroll 0 0;
+    background: #FF5722 none repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 2px;
@@ -32,14 +32,14 @@ body {
 }
 
 a:hover, a:active {
-    color: #ffb901;
+    color: #FF5722;
     text-decoration: none;
     outline: 0;
 }
 .aboutus-more {
-    border: 1px solid #fdb801;
+    border: 1px solid #FF5722;
     border-radius: 25px;
-    color: #fdb801;
+    color: #FF5722;
     display: inline-block;
     font-size: 14px;
     font-weight: 700;
@@ -54,7 +54,7 @@ a:hover, a:active {
     width: 18%;
 }
 .feature .feature-box .iconset::after {
-    background: #fdb801 none repeat scroll 0 0;
+    background: #FF5722 none repeat scroll 0 0;
     content: "";
     height: 150%;
     left: 43%;
@@ -90,16 +90,39 @@ a:hover, a:active {
     line-height: 22px;
 }
 .icon {
-    color : #f4b841;
+    color : #FF5722;
     padding:0px;
     font-size:40px;
-    border: 1px solid #fdb801;
+    border: 1px solid #FF5722;
     border-radius: 100px;
-    color: #fdb801;
+    color: #FF5722;
     font-size: 28px;
     height: 70px;
     line-height: 70px;
     text-align: center;
     width: 70px;
 }
+.core{
+    background-color: #FF5722;
+    height: 400px;
+    text-align: center;
+    padding-top: 60px;
+    color: white;
+}
+.core h1{
+    margin-bottom: 30px;
+}
+.meet{
+    text-align: center;
+}
+/* meet the team  */
+.meet{
+    justify-content: space-between;
+}
+.image{
+    justify-content: space-between;
+    border: 0px solid black;
+}
+img{
+    border-radius: 50%;
 }

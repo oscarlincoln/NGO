@@ -109,31 +109,22 @@
                                     <span class="animate-border border-black"></span>
                                 </div>
                                 <ul>
+                                   
                                     <li>
-                                        <a href="#">Home</a>
+                                        <a href="./others/service.php">Services</a>
                                     </li>
                                     <li>
-                                        <a href="#">Services</a>
+                                        <a href="./others/aboutus.php">About Us</a>
                                     </li>
-                                    <li>
-                                        <a href="#">About Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Testimonials</a>
-                                    </li>
+                                
                                 </ul>
                                 <ul>
                                     <li>
-                                        <a href="#">Contact us</a>
+                                        <a href="../others/contact.php">Contact us</a>
                                     </li>
+                            
                                     <li>
-                                        <a href="#">Courses</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Our Team</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">FAQs</a>
+                                        <a href="../others/faqs.php">FAQs</a>
                                     </li>
                                 </ul>
                             </div>

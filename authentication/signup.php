@@ -1,29 +1,32 @@
 <?php
-include('conn.php');
+
+include("conn.php");
 
 if(isset($_POST['submit'])){
+
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     $confirmpassword = $_POST['confirmpassword'];
-  
-$sql = "SELECT * FROM signup WHERE username = $username";
-$result = mysqli_query($con, $sql);
-$num = mysqli_num_row($result);
-if($num > 0){
-    echo "username already exists";
-}else{
 
-$sql = "INSERT INTO signup(username, email, password, confirmpassword)
-VALUES ('$username','$email','$password','$confirmpassword')";
+    $sql = "SELECT * FROM signup WHERE username = $username";
 
-if ($con->query($sql) === TRUE) {
-  header("location:signin.php");
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
+    $result = $con->query($sql);
+    if($result->num_rows>0){
+        echo "username already exists";
+    }else{
+
+        $sq = "INSERT INTO signup(username, email, password, confirmpassword) VALUES('$username','$email','$password','$confirmpassword')";
+        if($con->query($sq)){
+            echo "data inserted successfully";
+        }else{
+            echo "error inserting data: ". $con->error;
+        }
+        
+    }
 }
-}
-}
+$con->close();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
