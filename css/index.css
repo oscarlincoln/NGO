@@ -158,12 +158,7 @@ h1{
  background-color: #000;
 }
 
-/*responsive*/
-@media(max-width: 767px){
-	.controls{
-		display: none;
-	}
-}
+
 /* content1 */
 	.para1{
 		text-align: center;
@@ -174,7 +169,7 @@ h1{
 
 /* section1 */
 .section1{
-	display: flex;
+	/* display: flex; */
 	justify-content: space-between;
 	margin:50px 0px;
 }
@@ -195,13 +190,14 @@ img{
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 }
-/* last  */
-.last{
-	width: 100%;
-	height: 300px;
-	background-color: #FF5722;
-}
 
+/* responsive */
+/* tablets and large screens */
+@media only screen and (max-width: 767px){
+	.container .section1 .item{
+		display:inline-block;
+	}
+}
 
 
 

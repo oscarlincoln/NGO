@@ -41,8 +41,44 @@
 <div class="main-wrapper" id="home">
     <div class="black-overlay"></div>
     <div class="container-fluid">
-        <?php include('include/header.php')?>
-
+       <!-- header  -->
+       <div class="main wrapper">
+        <div class="balck-overlay"></div>
+            <div class="container-fluid">
+            <div class="row">
+    		<h2 class="sub-head">Ultrasound Education</h2>
+    		<div class="sidebar-panel">
+    		    <div class="row">
+        		    <div class="col-sm-6">
+        		        <button class="opennav">
+            		       <i class="fa fa-bars menu-icon fa-2x" aria-hidden="true"></i>
+        		        </button>
+        		   </div>
+        		     <div class="col-sm-6">
+        		        <button class="closeing">
+            		         <i class="fa fa-times menu-icon fa-2x" aria-hidden="true"></i>
+               		        </button>
+        		   </div>
+    		    </div>
+    		    <div class="col-sm-12">
+    		        <div class="sidelistwrp">
+    		            <ul>
+    		                <li  style="font-family:'Philosopher', sans-serif ;text-align:center;"><a href="index.php" >Home</a></li>
+    		                <li  style="font-family:'Philosopher', sans-serif ;text-align:center;"><a href="./others/service.php">Services</a></li>
+    		                <li  style="font-family:'Philosopher', sans-serif ;text-align:center;"><a href="./others/aboutus.php" >About Us</a></li>
+    		                <li  style="font-family:'Philosopher', sans-serif ;text-align:center;"><a href="./others/contact.php"> Contact Us</a></li>
+    		                <li  style="font-family:'Philosopher', sans-serif ;text-align:center;"><a href="./others/faq.php" >FAQs</a></li>
+    		            </ul>
+    		        </div>
+    		    </div>
+    		 </div>
+    	</div>
+            </div>
+        </div>
+		<script src="../js/header.js"></script>
+</body>
+</html>
+       <!-- end of header  -->
         <!-- mmain body  -->
         <section class="home">
      <div class="slider">
@@ -97,16 +133,16 @@
   <div class="container">
    <div class="section1">
     <div class="item">
-    <img src="images/6.jpg" width="300px" alt="">
-    <p>xdcfvbnm,</p>
+    <img src="images/machine.jpg" width="300px" height="200px"alt=""><br>
+    <p><center>We have machines that are <br>used to train professionals</center></p>
     </div>
     <div class="item">
-    <img src="images/6.jpg" width="300px" alt="">
-    <p>dfghjk</p>
+    <img src="images/preg.jpg" width="300px" height="200px"alt=""><br>
+    <p><center>The machines are also capable <br>of scanning pregnancies</center></p>
     </div>
     <div class="item">
-    <img src="images/6.jpg" width="300px" alt="">
-    <p>sdfghjk</p> 
+    <img src="images/scan.jpg" width="300px" height="200px"alt="">
+    <p><center></center></p> 
     </div>
    </div>
   </div>
@@ -116,12 +152,11 @@
         <h4 style="font-family:'Philosopher', sans-serif ;">We strive to deliver profes`sional and high quality ultrasound education for a better perception of the future career and dreams</h4>
     </div>
   </div>
-  <br><br>
-  <button class="btn" style="background-color:#FA6742;color:white;font-weight:bold; font-family: 'Philosopher', sans-serif;">Get Started</button><br><br><br><br>
-    </div><br>
+  
+    </div>
     <!-- end of main body  -->
     <!-- table  -->
-    <table class="table">
+    <table class="table" style="margin-top:-80px;">
         <tr>
             <td><img src="./images/6.jpg" width="500px" alt="" style="border-top-left-radius: 0px;border-top-right-radius: 0px;"></td>
             <td>

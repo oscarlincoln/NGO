@@ -20,11 +20,13 @@
 </head>
 <body>
    <?php include("../include/header.php")?>
-<div class="image" style="background-image:url('../images/out.jpg');height:800px;width:100%;">
-<p>fghjk</p>
+<div class="image" style="background-image:url('../images/5.jpg');height:800px;width:100%;background-size:cover;">
 </div>
 <section id="services" class="bg-light pt-100 pb-70">
    <div class="container">
+      <div class="serve" style="background-color:#FF5722;width:400px;height:80px;color:white;margin-top:-140px;margin-left:-120px;">
+         <p style="text-align:center;padding-top:20px;font-size:40px;">Our Service</p>
+      </div>
       <div class="row align-items-center">
          <div class="col-lg-5">
             <h2 class="title">What <span>Service</span> We

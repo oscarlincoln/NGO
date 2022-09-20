@@ -36,8 +36,8 @@
     		        <div class="sidelistwrp">
     		            <ul>
     		                <li  style="font-family:'Philosopher', sans-serif ;text-align:center;"><a href="../index.php" >Home</a></li>
-    		                <li  style="font-family:'Philosopher', sans-serif ;text-align:center;"><a href="./others/service.php">Services</a></li>
-    		                <li  style="font-family:'Philosopher', sans-serif ;text-align:center;"><a href="../others/about.php" >About Us</a></li>
+    		                <li  style="font-family:'Philosopher', sans-serif ;text-align:center;"><a href="../others/service.php">Services</a></li>
+    		                <li  style="font-family:'Philosopher', sans-serif ;text-align:center;"><a href="../others/aboutus.php" >About Us</a></li>
     		                <li  style="font-family:'Philosopher', sans-serif ;text-align:center;"><a href="../others/contact.php"> Contact Us</a></li>
     		                <li  style="font-family:'Philosopher', sans-serif ;text-align:center;"><a href="../others/faq.php" >FAQs</a></li>
     		            </ul>

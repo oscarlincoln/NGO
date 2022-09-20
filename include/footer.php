@@ -111,10 +111,10 @@
                                 <ul>
                                    
                                     <li>
-                                        <a href="./others/service.php">Services</a>
+                                        <a href="../others/service.php">Services</a>
                                     </li>
                                     <li>
-                                        <a href="./others/aboutus.php">About Us</a>
+                                        <a href="../others/aboutus.php">About Us</a>
                                     </li>
                                 
                                 </ul>
@@ -138,7 +138,7 @@
                                     <span class="animate-border border-black"></span>
                                 </div>
                                 <p><!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
-                                Reference site about Lorem Ipsum, giving information on its origins, as well.</p>
+                                subscribe for more updates</p>
                                 <form action="#">
                                     <div class="form-row">
                                         <div class="col dk-footer-form">
@@ -175,7 +175,7 @@
                         <div class="copyright-menu">
                             <ul>
                                 <li>
-                                    <a href="#">Home</a>
+                                    <a href="../index.php">Home</a>
                                 </li>
                                 <li>
                                     <a href="#">Terms</a>
@@ -184,7 +184,7 @@
                                     <a href="#">Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <a href="#">Contact</a>
+                                    <a href="../others/contact.php">Contact</a>
                                 </li>
                             </ul>
                         </div>

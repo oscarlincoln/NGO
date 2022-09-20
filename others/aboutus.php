@@ -20,8 +20,13 @@
 <body>
 
 <?php include('../include/header.php')?>
+<div class="background" style="background-image:url('../images/5.jpg');height:800px;width:100%;background-size:cover;"">
+</div>
 <div class="aboutus-section">
         <div class="container">
+        <div class="serve" style="background-color:#FF5722;width:400px;height:80px;color:white;margin-top:-140px;margin-left:-120px;">
+         <p style="text-align:center;padding-top:20px;font-size:40px;">About Us</p>
+      </div><br><br><br><br>
             <div class="row">
                 <div class="col-md-6 col-sm-9 col-xs-12">
                     <div class="aboutus">
@@ -98,35 +103,36 @@
             <div class="row">
             <div class="image col-md-4 col-sm-9 col-xs-12">
                 <img src="../images/Syed.PNG" width="200px" height="200px" alt="" style="border-radius:50%">
-                <p>sdfghjsdfghjdfghjdfghdfghjkfghj<br>kghjkfghjfghjfghjfghjfghjfg?<br>hjfghjghjfghjghj</p>
-                <button type="submit" class="btn btn-success">Read more</button>
+                <p>Head of Finance</p>
+                <button type="submit" class="btn" style="background-color: #FF5722;color:white;">Read more</button>
             </div>
             <div class="image col-md-4 col-sm-9 col-xs-12">
                 <img src="../images/Edwin.PNG" width="200px" height="200px" alt="" style="border-radius:50%">
-                <p>sdfghjksdfghjdfghjdfghdfghxdfgh<br>dfghdfghfghcfghcvgcvbxcvbx<br>cvbcvghcgdfghdfgd</p>
-                <button type="submit" class="btn btn-success">Read more</button>
+                <p>Clinical supervisor for <br>postgraduate students</p>
+                <button type="submit" class="btn" style="background-color: #FF5722;color:white;">Read more</button>
             </div>
             <div class="image col-md-4 col-sm-9 col-xs-12">
                 <img src="../images/Geofrey.PNG" width="200px" height="200px" alt="" style="border-radius:50%">
-                <p>sdfghjkertyudfghjdfghsdfghjdfgh<br>jdfghjdfghjdfghjdfghjfghcv<br>bfghcfghcvbcvbxcv</p>
-                <button type="submit" class="btn btn-success">Read more</button>
+                <p>CEO UltrasoundCPD Education</p>
+                <button type="submit" class="btn" style="background-color: #FF5722;color:white;">Read more</button>
             </div>
             </div><br><br><br><br>
             <div class="row">
             <div class="image col-md-4 col-sm-9 col-xs-12">
                 <img src="../images/Nakato.PNG" width="200px" height="200px" alt="" style="border-radius:50%">
-                <p>sdfghjcvbnmfghjdfghdfghjxdfghdf<br>ghjdfghjdfghjdfghjfghjcfgh<br>fghdfghdfghdfghfd</p>
-                <button type="submit" class="btn btn-success">Read more</button>
+                <p>UCE Chief Coordinator and <br>General Secretary</p>
+                <button type="submit" class="btn" style="background-color: #FF5722;color:white;">Read more</button>
             </div>
             <div class="image col-md-4 col-sm-9 col-xs-12">
                 <img src="../images/Samuel.PNG" width="200px" height="200px" alt="" style="border-radius:50%">
-                <p>dfghjkertyufghjfghjdfghdfghjfghj<br>fghjdfghjfghjfghjfghjfghfg<br>hjfghdfghfghfghf</p>
-                <button type="submit" class="btn btn-success">Read more</button>
+                <p>Musculoskeletal Ultrasound Clinical <br>Lead
+                </p>
+                <button type="submit" class="btn" style="background-color: #FF5722;color:white;">Read more</button>
             </div>
             <div class="image col-md-4 col-sm-9 col-xs-12">
                 <img src="../images/Theo.PNG" width="200px" height="200px" alt="" style="border-radius:50%">
-                <p>dfghjkdfghjkfghjkfghjfghjdfghjdfgh<br>jkfghjkfghjfghjfghfghfgh<br>fghfghfghjfghjfg</p>
-                <button type="submit" class="btn btn-success">Read more</button>
+                <p>Member of Medical Imaging Society</p>
+                <button type="submit" class="btn" style="background-color: #FF5722;color:white;">Read more</button>
             </div>
             </div>
             <div class="row">
@@ -135,13 +141,14 @@
             </div>
             <div class="image col-md-4 col-sm-9 col-xs-12"><br><br><br><br><br>
                 <img src="../images/Vitu.PNG" width="200px" height="200px" alt="" style="border-radius:50%">
-                <p>dfghjkertyufghjfghjdfghdfghjfghj<br>fghjdfghjfghjfghjfghjfghfg<br>hjfghdfghfghfghf</p>
-                <button type="submit" class="btn btn-success">Read more</button>
+                <p>Medical Imaging Specialist</p>
+                <button type="submit" class="btn" style="background-color: #FF5722;color:white;">Read more</button>
             </div>
             <div class="image col-md-4 col-sm-9 col-xs-12"><br><br><br><br><br>
             <img src="../images/Bua.PNG" width="200px" height="200px" alt="" style="border-radius:50%">
-                <p>dfghjkertyufghjfghjdfghdfghjfghj<br>fghjdfghjfghjfghjfghjfghfg<br>hjfghdfghfghfghf</p>
-                <button type="submit" class="btn btn-success">Read more</button>
+                <p>Liaison Officer
+                </p>
+                <button type="submit" class="btn" style="background-color: #FF5722;color:white;">Read more</button>
             </div>
             </div>
         </div>
