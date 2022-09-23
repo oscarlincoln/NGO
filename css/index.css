@@ -169,7 +169,7 @@ h1{
 
 /* section1 */
 .section1{
-	/* display: flex; */
+	display: flex;
 	justify-content: space-between;
 	margin:50px 0px;
 }
@@ -193,11 +193,11 @@ img{
 
 /* responsive */
 /* tablets and large screens */
-@media only screen and (max-width: 767px){
+/* @media only screen and (max-width: 767px){
 	.container .section1 .item{
 		display:inline-block;
 	}
-}
+} */
 
 
 

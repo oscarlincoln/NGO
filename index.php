@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION['username'])){
+    header('location:../authentication/signin.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +40,11 @@
             align-items:right;
             padding-left:80px;
         }
-       
+        .section1{
+	display: flex;
+	justify-content: space-between;
+	margin:50px 0px;
+}
     </style>
 </head>
 <body>
@@ -46,7 +56,7 @@
         <div class="balck-overlay"></div>
             <div class="container-fluid">
             <div class="row">
-    		<h2 class="sub-head">Ultrasound Education</h2>
+    		<h2 class="sub-head">ULTRASOUND EDUCATION &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<small style="font-size:10px;"><?php echo $_SESSION['username'];?> &nbsp;&nbsp;&nbsp;&nbsp;<a href="./authentication/logout.php" class="logout" style="color:white;font-size:7px;">Logout</a></small></h2>
     		<div class="sidebar-panel">
     		    <div class="row">
         		    <div class="col-sm-6">
@@ -72,6 +82,7 @@
     		        </div>
     		    </div>
     		 </div>
+             
     	</div>
             </div>
         </div>
@@ -156,7 +167,7 @@
     </div>
     <!-- end of main body  -->
     <!-- table  -->
-    <table class="table" style="margin-top:-80px;">
+    <table class="table" style="margin-top:80px;">
         <tr>
             <td><img src="./images/6.jpg" width="500px" alt="" style="border-top-left-radius: 0px;border-top-right-radius: 0px;"></td>
             <td>

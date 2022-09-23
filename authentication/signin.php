@@ -1,44 +1,67 @@
+<?php
+
+$login = 0;
+$invalid = 0;
+
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+    include("conn.php");
+    $username = $_POST['username'];
+    $password =$_POST['password'];
+
+    $sql = "select * from signup where username = '$username' and password = '$password'";
+    $result = mysqli_query($con, $sql);
+    if($result){
+    $num = mysqli_num_rows($result);
+    if($num>0){
+        $login=1;
+        session_start();
+        $_SESSION['username']=$username;
+        header("location:../index.php");
+    }else{
+        echo "<script>alert('User does not exist..')</script>";
+    }
+    } 
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign up</title>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>sign in</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!------ Include the above in your HEAD tag ---------->
-    <link rel="stylesheet" href="auth.css">
     <link rel="stylesheet" href="../include/footer.css">
-</head>
-<body>
+    </head>
+<body >
     <!-- log in start -->
-    <div class="container mt-5 pt-5  mb-5">
-        <div class="row">
-            <div class="col-12 col-sm-8 col-md-6 m-auto">
-                <div class="card border-0 shadow">
-                    <div class="card-body">
-                       <div class="text-center my-3"> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16" >
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                          </svg>
-                        </div>
-                        <form action="">
-                            <center><h1>Sign In</h1></center>
-                            <input type="text" name="" id="" placeholder="Username" class="form-control my-4 py-2">
-                            <input type="password" name="" id="" placeholder="Password" class="form-control my-4 py-2">
-                        </form>
-                        <div class="text-center mt-3">
-                        <button class="btn" name="submit" style="background-color:#B7242A;color:white;" width="200px">Sign in</button>
-                        <p>Don't have an account yet? <a href="signup.php">Sign Up</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <center><br><br><br>
+    <div class="col-5" style="border:0px solid black;border-radius:5%;box-shadow:rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;">
+             <div class="container mt-3 pt-3  mb-3">
+        <form action="signin.php" method="POST">
+        <i class='bx bxs-user' style="font-size:100px;"></i>
+            <h1 style="font-family: 'Philosopher', sans-serif;">Sign In</h1>
+            <input type="text" class="form-control" name="username" placeholder="enter username"><br>
+           
+            <input type="password" name="password" class="form-control" placeholder="enter password"><br>
+            
+           
+            <p style="font-family: 'Philosopher', sans-serif;">Don't have an account? <a href="signup.php">Sign up</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" class="btn btn-danger" name="submit" style="font-family: 'Philosopher', sans-serif;">Sign Up</button></p><br>
+        </form>
     </div>
-    <br><br><br><br><br>
+</div>
+</center>
+<br><br><br><br>
+    <!-- log in stop -->
+
+
     <?php include('../include/footer.php')?>
 <script src="auth.js"></script>
 </body>
